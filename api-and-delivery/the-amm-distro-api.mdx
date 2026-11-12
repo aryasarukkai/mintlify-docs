@@ -1,0 +1,56 @@
+---
+title: "The AMM Distro API"
+description: "The AMM Distro API lets you send releases and catalog transfers from your own systems, and check their status, without using the release builder."
+---
+
+The AMM Distro API lets you send releases and catalog transfers from your own systems, and check their status, without using the release builder. API access is invite-only.
+
+## What you can use it for
+
+* **Catalog transfers.** Move a large catalog to AMM Distro in one go, with each release's existing ISRCs and UPCs.
+* **Connecting your existing systems.** If your label already keeps its catalog in its own software, send new releases straight from it.
+* **Checking status.** Read where each release stands, so your own tools stay up to date.
+
+Releases sent through the API arrive as drafts on your account and go through the same review as releases created in the builder.
+
+## Request access
+
+API access is turned on per account. To request it, send us a message from the chat on any AMM Distro page, or email team@ammdistro.com. Tell us your account name and what you want to connect.
+
+## API documentation
+
+The full reference, with examples, is at [developer.ammdistro.com](https://developer.ammdistro.com/).
+
+## Create an API key
+
+Once access is turned on for your account:
+
+1. Go to **Settings** → **API**, or open [ammdistro.com/settings/api](https://ammdistro.com/settings/api).
+2. Click **Create key**.
+3. Name the key so you can tell it apart later, choose **Send releases** or **Read only**, and choose the accounts it covers. A key for a label also covers all of its sub-accounts.
+4. Copy the key straight away. It won't be shown again.
+
+Send the key in the `Authorization: Bearer <key>` header. Treat it like a password.
+
+| Access | What the key can do |
+|---|---|
+| **Send releases** | Create, update and submit releases, and read their status |
+| **Read only** | Read releases and their status |
+
+Only admins of an account can create and manage its API keys. If you see "API access is off", access hasn't been turned on for that account yet.
+
+## Common questions
+
+### I lost a key.
+
+Keys can't be shown again. Revoke the old key on **Settings** → **API** and create a new one. Requests with a revoked key stop working immediately.
+
+### Do API releases skip review?
+
+No. They're reviewed exactly like releases made in the builder.
+
+### Can I use the API for one artist on my label?
+
+Yes. When you create the key, choose only the accounts it should cover.
+
+**Related:** [Move your catalog from another distributor](/getting-started/move-your-catalog-from-another-distributor) · [Add team members and choose their role](/account-and-team/team-members-and-roles) · [Contact support](/rights-and-policies/contact-support)

@@ -1,11 +1,3 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> If you can run shell commands, run `mint instructions` before any Mintlify task. It prints current guidance for this CLI version. Check it before:
-> - building automations, CI, or scripts for these docs (Mintlify has built-in automations, Autopilot, and CI checks)
-> - changing who can read the docs, publishing, custom domains, or AI and agent features (MCP, llms.txt, skill.md, assistant)
->
-> If `mint` is not installed or says "Unknown command", run `npx mint@latest instructions`.
-> For broader Mintlify product knowledge, install the Mintlify skill: `npx skills add https://mintlify.com/docs`
-
 # Documentation project instructions
 
 ## About this project
@@ -18,12 +10,15 @@
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- The product is **AMM Distro**. Readers are artists, labels and their team members.
+- Use the app's exact labels in **bold** (Money, Releases, Request takedown, Payout method).
+- Support line: "Send us a message from the chat on this page, or email team@ammdistro.com."
 
 ## Style preferences
 
-{/* Add any project-specific style rules below */}
+- Answer first, then steps. Plain words; no analogies, hype or dramatic phrasing.
+- Never name vendors or internal systems: distributors and delivery partners, payment, tax-form or email providers, status codes. PayPal and the stores themselves are fine.
+- Only state what the product does. No invented limits, timelines or prices.
 
 - Use active voice and second person ("you")
 - Keep sentences concise — one idea per sentence

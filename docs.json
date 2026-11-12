@@ -1,72 +1,206 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "maple",
+  "name": "AMM Distro Help",
+  "description": "How to release music, get paid and manage your account on AMM Distro.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#EAA943",
+    "light": "#EAA943",
+    "dark": "#C38406"
   },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+  "background": {
+    "color": {
+      "light": "#0A0909",
+      "dark": "#0A0909"
+    }
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": true
+  },
+  "fonts": {
+    "family": "Satoshi",
+    "weight": 500,
+    "source": "/fonts/Satoshi-Variable.woff2",
+    "format": "woff2",
+    "heading": {
+      "family": "Satoshi",
+      "weight": 700,
+      "source": "/fonts/Satoshi-Variable.woff2",
+      "format": "woff2"
+    },
+    "body": {
+      "family": "Satoshi",
+      "weight": 400,
+      "source": "/fonts/Satoshi-Variable.woff2",
+      "format": "woff2"
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/wordmark-light-text.svg",
+    "dark": "/logo/wordmark-light-text.svg",
+    "href": "https://ammdistro.com"
+  },
+  "favicon": "/favicon.svg",
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "section"
+  },
+  "search": {
+    "prompt": "Search help articles"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "label": "Email support",
+        "href": "mailto:team@ammdistro.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open AMM Distro",
+      "href": "https://ammdistro.com/home"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting started",
+        "icon": "rocket",
+        "pages": [
+          "index",
+          "getting-started/what-is-amm-distro",
+          "getting-started/how-to-join-amm-distro",
+          "getting-started/sign-in-to-amm-distro",
+          "getting-started/accept-an-invitation",
+          "getting-started/set-up-your-new-account",
+          "getting-started/a-tour-of-your-dashboard",
+          "getting-started/move-your-catalog-from-another-distributor"
+        ]
+      },
+      {
+        "group": "Creating a release",
+        "icon": "disc",
+        "pages": [
+          "creating-a-release/create-a-release-step-by-step",
+          "creating-a-release/artwork-requirements",
+          "creating-a-release/audio-requirements",
+          "creating-a-release/titles-versions-and-featured-artists",
+          "creating-a-release/add-songwriter-producer-and-performer-credits",
+          "creating-a-release/choose-a-release-date",
+          "creating-a-release/choose-stores-and-countries",
+          "creating-a-release/content-id-and-social-platforms",
+          "creating-a-release/previously-released-music-isrcs-and-upcs",
+          "creating-a-release/cover-songs-samples-and-remixes",
+          "creating-a-release/check-and-submit-your-release",
+          "creating-a-release/single-ep-or-album",
+          "creating-a-release/distribute-a-music-video"
+        ]
+      },
+      {
+        "group": "Release status & review",
+        "icon": "list-checks",
+        "pages": [
+          "release-status-and-review/release-statuses-explained",
+          "release-status-and-review/your-release-needs-changes",
+          "release-status-and-review/why-was-my-release-rejected",
+          "release-status-and-review/send-proof-of-rights",
+          "release-status-and-review/sign-your-release-agreement",
+          "release-status-and-review/how-long-until-my-release-is-live"
+        ]
+      },
+      {
+        "group": "After release",
+        "icon": "send",
+        "pages": [
+          "after-release/change-a-release-thats-already-live",
+          "after-release/request-an-edit-to-a-delivered-release",
+          "after-release/take-a-release-down",
+          "after-release/claim-a-tiktok-sound-for-your-release",
+          "after-release/upload-project-files-and-stems",
+          "after-release/track-your-delivery"
+        ]
+      },
+      {
+        "group": "Stores & artist profiles",
+        "icon": "store",
+        "pages": [
+          "stores-and-artist-profiles/which-stores-does-amm-distro-deliver-to",
+          "stores-and-artist-profiles/link-your-spotify-and-apple-music-artist-profiles",
+          "stores-and-artist-profiles/spotify-artist-profile-protection",
+          "stores-and-artist-profiles/my-release-is-on-the-wrong-artist-page",
+          "stores-and-artist-profiles/i-cant-find-my-release-in-a-store",
+          "stores-and-artist-profiles/get-access-to-spotify-for-artists-and-other-artist-tools",
+          "stores-and-artist-profiles/your-music-on-tiktok-instagram-and-youtube"
+        ]
+      },
+      {
+        "group": "Earnings & payouts",
+        "icon": "wallet",
+        "pages": [
+          "earnings-and-payouts/how-earnings-work",
+          "earnings-and-payouts/set-up-payouts",
+          "earnings-and-payouts/when-do-i-get-paid",
+          "earnings-and-payouts/payout-fees",
+          "earnings-and-payouts/tax-forms-w-9-and-w-8ben",
+          "earnings-and-payouts/tax-withholding-for-artists-outside-the-us",
+          "earnings-and-payouts/download-and-read-your-royalty-statement",
+          "earnings-and-payouts/split-royalties-with-collaborators",
+          "earnings-and-payouts/accept-a-royalty-split-invitation",
+          "earnings-and-payouts/advances-and-recoupment",
+          "earnings-and-payouts/statements-paid-in-another-currency",
+          "earnings-and-payouts/collaborator-agreements"
+        ]
+      },
+      {
+        "group": "Analytics & marketing",
+        "icon": "chart-line",
+        "pages": [
+          "analytics-and-marketing/read-your-analytics",
+          "analytics-and-marketing/spotify-for-artists-numbers",
+          "analytics-and-marketing/why-dont-my-streams-match-my-earnings",
+          "analytics-and-marketing/smart-links-for-your-releases",
+          "analytics-and-marketing/marketing-tools-in-amm-distro",
+          "analytics-and-marketing/playlist-pitching"
+        ]
+      },
+      {
+        "group": "Account & team",
+        "icon": "users",
+        "pages": [
+          "account-and-team/team-members-and-roles",
+          "account-and-team/switch-between-accounts",
+          "account-and-team/manage-artists-on-your-label",
+          "account-and-team/label-branding",
+          "account-and-team/manage-your-artists",
+          "account-and-team/change-your-name-email-or-notifications",
+          "account-and-team/the-amm-distro-mobile-app",
+          "account-and-team/connect-claude-or-another-ai-assistant",
+          "account-and-team/account-holds-and-reviews",
+          "account-and-team/delete-your-account-and-personal-data"
+        ]
+      },
+      {
+        "group": "Rights & policies",
+        "icon": "scale",
+        "pages": [
+          "rights-and-policies/ai-generated-music",
+          "rights-and-policies/artificial-streaming",
+          "rights-and-policies/copyright-claims-and-counter-notices",
+          "rights-and-policies/samples-covers-and-permissions",
+          "rights-and-policies/who-owns-my-music",
+          "rights-and-policies/contact-support"
+        ]
+      },
+      {
+        "group": "API & delivery",
+        "icon": "code",
+        "pages": [
+          "api-and-delivery/the-amm-distro-api"
+        ]
+      }
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }
